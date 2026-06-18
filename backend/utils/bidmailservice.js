@@ -7,8 +7,7 @@ require('dotenv').config({
 
 const sendBidMail = async (email, username, subject, htmlBody) => {
   const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
+     service:"gmail",
     secure: true, 
     auth: {
       user: process.env.SMTP_USER,
